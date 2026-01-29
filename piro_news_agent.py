@@ -13,7 +13,8 @@ KEYWORD = "kt"
 
 EMAIL_SENDER = "pirojung@gmail.com"  
 EMAIL_APP_PWD = os.getenv("EMAIL_APP_PWD") 
-EMAIL_RECEIVER = "po.jung@kt.com"
+# EMAIL_RECEIVER = "po.jung@kt.com"
+EMAIL_RECEIVER = ["po.jung@kt.com", "5422540656@kt.com"]
 
 # [기존] 제외 키워드 및 사이트
 EXCLUDE_KEYWORDS = [
@@ -163,7 +164,9 @@ def send_email(grouped_news):
 
     msg = MIMEMultipart()
     msg['From'] = EMAIL_SENDER
-    msg['To'] = EMAIL_RECEIVER
+    # msg['To'] = EMAIL_RECEIVER
+    # [수정] 리스트 형태의 수신자들을 "주소1, 주소2" 형태의 문자열로 변환하여 넣습니다.
+    msg['To'] = ", ".join(EMAIL_RECEIVER)
     msg['Subject'] = subject
     msg.attach(MIMEText(html_content, 'html'))
 
