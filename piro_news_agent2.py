@@ -13,7 +13,7 @@ KEYWORD = "kt"
 
 EMAIL_SENDER = "pirojung@gmail.com"  
 EMAIL_APP_PWD = os.getenv("EMAIL_APP_PWD") 
-EMAIL_RECEIVER = ["po.jung@kt.com", "5422540656@kt.com", "kh.yang@kt.com","hyunwoo.jang@kt.com"]
+EMAIL_RECEIVER = ["po.jung@kt.com", "5422540656@kt.com", "kh.yang@kt.com","hyunwoo.jang@kt.com", "seolhee.shin@kt.com", "juri.kyung@kt.com", "kim.youngkee@kt.com", "jong-uk.kim@kt.com", "jongteak.oh@kt.com","reenayou@kt.com","jihyun.yoon@kt.com","say.na@kt.com"]
 
 # [강화된] 제외 키워드 - 스포츠 및 연예계 특화 용어 추가
 EXCLUDE_KEYWORDS = [
